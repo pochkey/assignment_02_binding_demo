@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
 export class AllbindingdemoComponent {
   txtvalue = "Value from TS";
   divcolor = "blue";
+  textonthefly = "type";
+  colortxtbox : string = "blue";
 
 }

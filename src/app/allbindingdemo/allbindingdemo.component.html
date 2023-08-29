@@ -6,3 +6,10 @@
 <div [style.color]="divcolor"> Font color set from TS </div>
 <p>class binding</p>
 <div [class.divspec]="true"> Font color set from css </div>
+<p>Two way binding</p>
+<input [(ngModel)]="textonthefly"/>
+<strong>{{textonthefly}}</strong>
+<input type="text" value="{{textonthefly}}"/>
+<p>Change text box Color on by its value</p>
+<input type="color" [(ngModel)]="colortxtbox"/>
+
