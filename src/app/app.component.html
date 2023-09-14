@@ -1,9 +1,15 @@
 <div>
 App Component start
 <div>
-  <app-allbindingdemo></app-allbindingdemo>
+  <app-allbindingdemo [parentToChild]="title" [parentTxtValue]="parentTxt"></app-allbindingdemo>
+  <br>
+  
 </div>
-
+<h3>Share Parent text box to child template</h3>
+   <input [(ngModel)]="parentTxt" />  
+   
+   
+  
 
 App Component End
 </div>

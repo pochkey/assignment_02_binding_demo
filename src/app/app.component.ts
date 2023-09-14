@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'assignment_02_binding_demo';
+  parentTxt = 'Type anything to share';
+
 }

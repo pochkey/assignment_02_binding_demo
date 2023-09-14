@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-allbindingdemo',
@@ -6,9 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./allbindingdemo.component.css']
 })
 export class AllbindingdemoComponent {
+  @Input ('parentToChild') ptc : any;
+  @Input ('parentTxtValue') ptv : any;
+  // txtValueFrmParent = this.ptv;
   txtvalue = "Value from TS";
   divcolor = "blue";
-  textonthefly = "type";
-  colortxtbox : string = "blue";
+  textonthefly = "type"
+  colortxtbox : string = "";
 
 }
+ 
